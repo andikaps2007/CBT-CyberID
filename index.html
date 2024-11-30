@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBT Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h1>Dashboard</h1>
+        <button id="start-exam">Mulai Ujian/Ulangan</button>
+    </div>
+
+    <div id="app" style="display: none;">
+        <h1>Ujian Online</h1>
+        <div id="timer">Waktu tersisa: <span id="time-remaining"></span></div>
+        <div id="question-container"></div>
+        <button id="prev-button" style="display: none;">Soal Sebelumnya</button>
+        <button id="next-button">Soal Berikutnya</button>
+        <button id="finish-button" style="display: none;">Selesai</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
